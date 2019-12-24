@@ -48,9 +48,9 @@ def speak(audio):
 
 
 def greetMe():
-    playsound('C:/Users/USER/Downloads/Telegram Desktop/SVATI/communication-channel.mp3')
+    playsound('E:/CodeWork/Machine Learning/SWATI-The-Assistant-master/SWATI-The-Assistant-master/communication-channel.mp3')
     speak('Starting all system applications. Installing all drivers! Calibrating and examing all the core processors')
-    playsound('C:/Users/USER/Downloads/Telegram Desktop/SVATI/Computer_Start-Up-Your_Mom-1280862923.mp3')
+    playsound('E:/CodeWork/Machine Learning/SWATI-The-Assistant-master/SWATI-The-Assistant-master/Computer_Start-Up-Your_Mom-1280862923.mp3')
     speak('All systems have been started')
     speak('Now i am all in mine')
     currentH = int(datetime.datetime.now().hour)
@@ -92,7 +92,7 @@ def timer(self, timerr):
 
 def main_process():
         window.refresh()
-        query = myCommand();
+        query = myCommand()
         query = query.lower()
         window['_OUTPUT_'].update(query)
         window.refresh()
@@ -324,8 +324,8 @@ def main_process():
                     server = smtplib.SMTP('smtp.gmail.com', 587)
                     server.ehlo()
                     server.starttls()
-                    server.login("jaanichauhan0@gmail.com", '7073180849')
-                    server.sendmail('shadabhussain007khan@gmail.com', "shadabhussain007khan@gmail.com", content)
+                    server.login("shantanuguptaknp@gmail.com", '7844975572')
+                    server.sendmail('rockstarshan18@gmail.com', "rockstarshan18@gmail.com", content)
                     server.close()
                     speak('Email sent!')
 
@@ -383,7 +383,7 @@ def main_process():
 
 
         elif 'play music' in query:
-            music_dir = 'C:/Users/USER/Music'
+            music_dir = 'D:/Media/'
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[0]))
@@ -443,7 +443,7 @@ while True:  # Event Loop
             keyword=myCommand()
             keyword=keyword.lower()
             if 'jarvis' in keyword:
-                playsound('C:/Users/USER/Downloads/Telegram Desktop/SVATI/when.mp3')
+                playsound('E:/CodeWork/Machine Learning/SWATI-The-Assistant-master/SWATI-The-Assistant-master/when.mp3')
                 msg=[' At your service sir!','Yes sir','How can i help you','Speak','I am listning','Yes']
                 speak(random.choice(msg))
 
