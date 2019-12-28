@@ -15,7 +15,7 @@ import re
 import pyautogui
 import pygetwindow
 import PySimpleGUI as sg
-from timer import timer1
+from timer import *
 import cv2
 from better_profanity import profanity
 from playsound import playsound 
@@ -39,7 +39,7 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
 def speak(audio):
-    print('Lisa: ' + audio)
+    print('ALEX: ' + audio)
     window.refresh()
     window['_OUTPUT1_'].update(audio)
     window.refresh()
@@ -55,12 +55,12 @@ def greetMe():
     speak('Now i am all in mine')
     currentH = int(datetime.datetime.now().hour)
     if currentH >= 0 and currentH < 12:
-        speak('Good Morning!')
+        speak('Good Morning Sir!')
     if currentH >= 12 and currentH < 18:
-        speak('Good Afternoon!')
+        speak('Good Afternoon Sir!')
 
     if currentH >= 18 and currentH != 0:
-        speak('Good Evening!')
+        speak('Good Evening Sir!')
 
 
 def myCommand():
@@ -146,7 +146,7 @@ def main_process():
             speak("Bye Sir!")
 
         elif 'will you be my girlfriend' in query:
-            speak("sorry i have a boyfriend better then you")
+            speak("sorry I'm committed with my google assistant lady ;)")
 
         
 
@@ -436,15 +436,15 @@ while True:  # Event Loop
     if event == 'Show':
         #wake_word=['hey google','activate jarvis','listen']
         greetMe()
-        speak('Hello Sir, I am your digital assistant   swati   Lisa the Lady Jarvis!')
+        speak('Hello Shantanu Sir, I am your digital assistant Alexa you can call me \"ALEX\" !')
         speak('How may I help you?')
 
         while True:
             keyword=myCommand()
             keyword=keyword.lower()
-            if 'jarvis' in keyword:
+            if 'Alex' in keyword:
                 playsound('E:/CodeWork/Machine Learning/SWATI-The-Assistant-master/SWATI-The-Assistant-master/when.mp3')
-                msg=[' At your service sir!','Yes sir','How can i help you','Speak','I am listning','Yes']
+                msg=[' At your service sir!','Yes sir','How can i help you','Hey Sir, How may I help you?','I am listning','Yes']
                 speak(random.choice(msg))
 
                 main_process()
@@ -455,10 +455,6 @@ while True:  # Event Loop
 
 
 window.close()
-
-
-
-
 
 
 
