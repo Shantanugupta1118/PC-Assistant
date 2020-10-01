@@ -1,5 +1,5 @@
 # Create your own jarvis
-PC assistant Its an AI based Voice Assistant with an attractive GUI
+Jarvis an AI based Voice Assistant with an attractive GUI
 
 
 open command prompt and set to this location then type <b><i>pip install -r requirements.txt</b></i><br>
