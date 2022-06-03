@@ -5,7 +5,7 @@ auto-py-to-exe==2.6.6
 beautifulsoup4==4.8.1
 better-profanity==0.5.0
 blis==0.4.1
-bottle==0.12.17
+bottle==0.12.20
 bottle-websocket==0.2.9
 cachetools==3.1.1
 catalogue==0.0.8
