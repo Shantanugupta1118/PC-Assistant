@@ -31,7 +31,7 @@ importlib-metadata==0.23
 imutils==0.5.3
 inflect==3.0.2
 jaraco.itertools==4.4.2
-joblib==0.14.0
+joblib==1.2.0
 Keras==2.3.1
 Keras-Applications==1.0.8
 keras-models==0.0.7
