@@ -99,7 +99,7 @@ thinc==7.3.1
 tqdm==4.40.0
 urllib3==1.25.7
 wasabi==0.4.2
-Werkzeug==0.16.0
+Werkzeug==2.2.3
 whichcraft==0.6.1
 wikipedia==1.4.0
 WMI==1.4.9
